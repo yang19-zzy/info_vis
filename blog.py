@@ -1,9 +1,8 @@
 import altair as alt
 import pandas as pd
 import streamlit as st
-import requests
-from bs4 import BeautifulSoup
-# from BeautifulSoup4 import BeautifulSoup
+# import requests
+# from bs4 import BeautifulSoup
 
 def popualtion_GRP(dataset):
     selection = alt.selection_single(on='mouseover',empty='none')
@@ -68,7 +67,7 @@ def main():
     countries = dictionary.dropna()
     country_code = countries.Code.to_list()
     ## winter_countries
-    winter_countries = winter.loc[winter['Country'].isin(country_code)]
+    winter_countries = winter.loc[winter['Country'].isin(country_code),:]
     winter_countries['Season'] = ['winter'] * winter_countries.shape[0]
     ## summer_countries
     summer_countries = summer.loc[summer['Country'].isin(country_code)]
@@ -82,35 +81,36 @@ def main():
     df_06 = df[df.Year>2006]
     df_NOR = df[df.Country=='NOR']
     ## dataset_2
-    URL = "https://www.nytimes.com/interactive/2018/sports/olympics/medal-count-results-schedule.html"
+    medal_2018 = pd.read_csv('archive/medal_2018.csv')
+    # URL = "https://www.nytimes.com/interactive/2018/sports/olympics/medal-count-results-schedule.html"
 
-    result = requests.get(URL,'html.parser')
-    soup = BeautifulSoup(result.content, 'html.parser')
-    table_soup = soup.find(class_="int-table oly-table int-table-medal-standings")
+    # result = requests.get(URL,'html.parser')
+    # soup = BeautifulSoup(result.content, 'html.parser')
+    # table_soup = soup.find(class_="int-table oly-table int-table-medal-standings")
 
-    table = table_soup.find('table')
-    rows_soup = table.find_all('tr')
-    heads = rows_soup[0]
-    data = rows_soup[1:]
+    # table = table_soup.find('table')
+    # rows_soup = table.find_all('tr')
+    # heads = rows_soup[0]
+    # data = rows_soup[1:]
 
-    columns = []
-    heads_item = heads.find_all('td')
-    for item in heads_item:
-        columns.append(item.text)
-    rows = []
-    for row in data:
-        rows.append([item.text for item in row])
+    # columns = []
+    # heads_item = heads.find_all('td')
+    # for item in heads_item:
+    #     columns.append(item.text)
+    # rows = []
+    # for row in data:
+    #     rows.append([item.text for item in row])
 
-    medal_2018 = pd.DataFrame(rows,columns=columns)
-    medal_2018['Country'] = medal_2018.apply(lambda X: X['Medal Count'][:-3],axis=1)
-    medal_2018['Code'] = medal_2018.apply(lambda row: row['Medal Count'][-3:], axis=1)
-
-
-
+    # medal_2018 = pd.DataFrame(rows,columns=columns)
+    # medal_2018['Country'] = medal_2018.apply(lambda X: X['Medal Count'][:-3],axis=1)
+    # medal_2018['Code'] = medal_2018.apply(lambda row: row['Medal Count'][-3:], axis=1)
 
 
 
-    st.title("SI 649 Individual Project - Communicative Visualization")
+
+
+
+    st.title("""Olympics Facts in Norway\nCommunicative Visualization """)
     # st.altair_chart()
     selectbox_values = st.sidebar.selectbox(label='Select to show more',
                     options=['Learning Objectives',
