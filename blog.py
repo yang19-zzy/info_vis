@@ -2,7 +2,7 @@ import altair as alt
 import pandas as pd
 import streamlit as st
 import requests
-from bs4 import BeautifulSoup
+from BeautifulSoup4 import BeautifulSoup
 
 def popualtion_GRP(dataset):
     selection = alt.selection_single(on='mouseover',empty='none')
