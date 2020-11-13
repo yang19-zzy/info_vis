@@ -1,0 +1,94 @@
+,Medal Count,Gold,Silver,Bronze,Total,Country,Code
+0,NorwayNOR,14,14,11,39,Norway,NOR
+1,GermanyGER,14,10,7,31,Germany,GER
+2,CanadaCAN,11,8,10,29,Canada,CAN
+3,United StatesUSA,9,8,6,23,United States,USA
+4,NetherlandsNED,8,6,6,20,Netherlands,NED
+5,South KoreaKOR,5,8,4,17,South Korea,KOR
+6,Olympic Athletes From RussiaOAR,2,6,9,17,Olympic Athletes From Russia,OAR
+7,SwitzerlandSUI,5,6,4,15,Switzerland,SUI
+8,FranceFRA,5,4,6,15,France,FRA
+9,SwedenSWE,7,6,1,14,Sweden,SWE
+10,AustriaAUT,5,3,6,14,Austria,AUT
+11,JapanJPN,4,5,4,13,Japan,JPN
+12,ItalyITA,3,2,5,10,Italy,ITA
+13,ChinaCHN,1,6,2,9,China,CHN
+14,Czech RepublicCZE,2,2,3,7,Czech Republic,CZE
+15,FinlandFIN,1,1,4,6,Finland,FIN
+16,BritainGBR,1,0,4,5,Britain,GBR
+17,BelarusBLR,2,1,0,3,Belarus,BLR
+18,SlovakiaSVK,1,2,0,3,Slovakia,SVK
+19,AustraliaAUS,0,2,1,3,Australia,AUS
+20,PolandPOL,1,0,1,2,Poland,POL
+21,SloveniaSLO,0,1,1,2,Slovenia,SLO
+22,SpainESP,0,0,2,2,Spain,ESP
+23,New ZealandNZL,0,0,2,2,New Zealand,NZL
+24,HungaryHUN,1,0,0,1,Hungary,HUN
+25,UkraineUKR,1,0,0,1,Ukraine,UKR
+26,BelgiumBEL,0,1,0,1,Belgium,BEL
+27,KazakhstanKAZ,0,0,1,1,Kazakhstan,KAZ
+28,LatviaLAT,0,0,1,1,Latvia,LAT
+29,LiechtensteinLIE,0,0,1,1,Liechtenstein,LIE
+30,AlbaniaALB,0,0,0,0,Albania,ALB
+31,AndorraAND,0,0,0,0,Andorra,AND
+32,ArgentinaARG,0,0,0,0,Argentina,ARG
+33,ArmeniaARM,0,0,0,0,Armenia,ARM
+34,AzerbaijanAZE,0,0,0,0,Azerbaijan,AZE
+35,BermudaBER,0,0,0,0,Bermuda,BER
+36,BoliviaBOL,0,0,0,0,Bolivia,BOL
+37,Bosnia and HerzegovinaBIH,0,0,0,0,Bosnia and Herzegovina,BIH
+38,BrazilBRA,0,0,0,0,Brazil,BRA
+39,BulgariaBUL,0,0,0,0,Bulgaria,BUL
+40,ChileCHI,0,0,0,0,Chile,CHI
+41,ColombiaCOL,0,0,0,0,Colombia,COL
+42,CroatiaCRO,0,0,0,0,Croatia,CRO
+43,CyprusCYP,0,0,0,0,Cyprus,CYP
+44,DenmarkDEN,0,0,0,0,Denmark,DEN
+45,EcuadorECU,0,0,0,0,Ecuador,ECU
+46,EritreaERI,0,0,0,0,Eritrea,ERI
+47,EstoniaEST,0,0,0,0,Estonia,EST
+48,GeorgiaGEO,0,0,0,0,Georgia,GEO
+49,GhanaGHA,0,0,0,0,Ghana,GHA
+50,GreeceGRE,0,0,0,0,Greece,GRE
+51,Hong KongHKG,0,0,0,0,Hong Kong,HKG
+52,IcelandISL,0,0,0,0,Iceland,ISL
+53,IndiaIND,0,0,0,0,India,IND
+54,IranIRI,0,0,0,0,Iran,IRI
+55,IrelandIRL,0,0,0,0,Ireland,IRL
+56,IsraelISR,0,0,0,0,Israel,ISR
+57,JamaicaJAM,0,0,0,0,Jamaica,JAM
+58,KenyaKEN,0,0,0,0,Kenya,KEN
+59,KosovoKOS,0,0,0,0,Kosovo,KOS
+60,KyrgyzstanKGZ,0,0,0,0,Kyrgyzstan,KGZ
+61,LebanonLBN,0,0,0,0,Lebanon,LBN
+62,LithuaniaLTU,0,0,0,0,Lithuania,LTU
+63,LuxembourgLUX,0,0,0,0,Luxembourg,LUX
+64,MacedoniaMKD,0,0,0,0,Macedonia,MKD
+65,MadagascarMAD,0,0,0,0,Madagascar,MAD
+66,MalaysiaMAS,0,0,0,0,Malaysia,MAS
+67,MaltaMLT,0,0,0,0,Malta,MLT
+68,MexicoMEX,0,0,0,0,Mexico,MEX
+69,MoldovaMDA,0,0,0,0,Moldova,MDA
+70,MonacoMON,0,0,0,0,Monaco,MON
+71,MongoliaMGL,0,0,0,0,Mongolia,MGL
+72,MontenegroMNE,0,0,0,0,Montenegro,MNE
+73,MoroccoMAR,0,0,0,0,Morocco,MAR
+74,NigeriaNGR,0,0,0,0,Nigeria,NGR
+75,North KoreaPRK,0,0,0,0,North Korea,PRK
+76,PakistanPAK,0,0,0,0,Pakistan,PAK
+77,PhilippinesPHI,0,0,0,0,Philippines,PHI
+78,PortugalPOR,0,0,0,0,Portugal,POR
+79,Puerto RicoPUR,0,0,0,0,Puerto Rico,PUR
+80,RomaniaROU,0,0,0,0,Romania,ROU
+81,San MarinoSMR,0,0,0,0,San Marino,SMR
+82,SerbiaSRB,0,0,0,0,Serbia,SRB
+83,SingaporeSGP,0,0,0,0,Singapore,SGP
+84,South AfricaRSA,0,0,0,0,South Africa,RSA
+85,TaiwanTPE,0,0,0,0,Taiwan,TPE
+86,ThailandTHA,0,0,0,0,Thailand,THA
+87,Timor-LesteTLS,0,0,0,0,Timor-Leste,TLS
+88,TogoTOG,0,0,0,0,Togo,TOG
+89,TongaTGA,0,0,0,0,Tonga,TGA
+90,TurkeyTUR,0,0,0,0,Turkey,TUR
+91,Unified KoreaCOR,0,0,0,0,Unified Korea,COR
+92,UzbekistanUZB,0,0,0,0,Uzbekistan,UZB
