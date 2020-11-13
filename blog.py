@@ -185,7 +185,7 @@ def main():
     st.sidebar.text("(Diselect to show less)")
     checkbox_1 = st.sidebar.checkbox('Domain Questions',value=True)
     checkbox_2 = st.sidebar.checkbox('Select to learn more',value=False)
-    checkbox_3 = st.sidebar.checkbox('Design Process',value=False)
+    checkbox_3 = st.sidebar.checkbox('Earlier Version',value=False)
 
 
     html = """
@@ -227,12 +227,14 @@ def main():
         st.altair_chart(medal_rank(medal_2018,medal_type), use_container_width=True)
         
         st.sidebar.markdown('----------------------')
-        year = st.sidebar.slider('Year', 1896, 2014, 1988)  
         country_list = list(countries.Country) 
         button = st.sidebar.multiselect('Select to show more countries', country_list, default=['Norway'])
+        st.sidebar.markdown('----------------------')
+        year = st.sidebar.slider('Year', 1896, 2014, 1988)  
         
         st.markdown('----------------------')
         st.markdown('<h3>Relations between Population and GDP per Capita Overtime</h3>',unsafe_allow_html=True)
+        st.markdown('Select countries you would like to know more in the sidebar at the left ^^')
         st.altair_chart(popualtion_GDP_inter(countries,button), use_container_width=True)
         # st.text(str(year))
 
@@ -256,8 +258,8 @@ def main():
 
     if checkbox_3:
         st.markdown('----------------------')
-        st.header('Design Process')
-        st.markdown('<h3>Exploratory Data Analysis</h3>',unsafe_allow_html=True)
+        st.header('Earlier Version')
+        st.markdown('<h3>Building Statistics Vis</h3>',unsafe_allow_html=True)
         st.markdown(" ")
         st.markdown('Relationship between popultaion and GDP')
         st.altair_chart(popualtion_GDP_stat(countries), use_container_width=True)
