@@ -1,9 +1,9 @@
 import altair as alt
 import pandas as pd
 import numpy as np
-# import seaborn as sns
+import seaborn as sns
 import streamlit as st
-# from matplotlib import pyplot as plt
+from matplotlib import pyplot as plt
 # from preprocessing import *
 # import requests
 # from bs4 import BeautifulSoup
@@ -150,16 +150,12 @@ def gender_inter(dataset, filter_year):
     return (char_m | chart_f).properties(title='Number of Winners in Gender')
 
 def season_inter(dataset, filter_year):
-    selection = alt.selection_single(on='mouseover',empty='none')
-    opacityCondition = alt.condition(selection, alt.value(1.0), alt.value(0.8))
-    bar = alt.Chart(dataset,title='Number of Medals in Summer and Winter Olympics overtime').mark_bar().encode(
-            x='Year:N',
-            y='Medal:Q',
-            color='Season',
-            tooltip=['Medal:Q'],
-            opacity=opacityCondition
-        ).add_selection(selection).transform_filter(alt.datum.Year >= filter_year)
-    return bar
+    if filter_year < 2014:
+        g = sns.barplot(x='Year',y='Medal',data=dataset[dataset.Year.isin(range(filter_year,2014))],hue='Season')
+    else:
+        g = sns.barplot(x='Year',y='Medal',data=dataset[dataset.Year.isin(['2014'])],hue='Season')
+    g.set_xticklabels(labels=g.get_xticklabels(), rotation=45)
+    return g
 
 def main():
     # load data
@@ -245,11 +241,11 @@ def main():
         st.markdown('----------------------')
         st.markdown('<h3>Number of Medals in Summer and Winter Olympics Overtime 1896-2012</h3>',unsafe_allow_html=True)
         year_season_medal = df.groupby(['Year','Season']).count().Medal.reset_index()
-        # plt.subplots(figsize=(7,3))
-        st.altair_chart(season_inter(year_season_medal, year), use_container_width=True)
-        # g.set(title='Number of Medals in Summer and Winter Olympics overtime')
-        # st.set_option('deprecation.showPyplotGlobalUse', False)
-        # st.pyplot()
+        plt.subplots(figsize=(7,3))
+        g = season_inter(year_season_medal, year)
+        g.set(title='Number of Medals in Summer and Winter Olympics overtime')
+        st.set_option('deprecation.showPyplotGlobalUse', False)
+        st.pyplot()
 
         st.markdown('----------------------')
         st.markdown('<h3>Number of Winners in Different Gender Changes Overtime 1924-2014</h3>',unsafe_allow_html=True)
