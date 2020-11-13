@@ -177,7 +177,7 @@ def main():
     ## dataset_2
     medal_2018 = pd.read_csv('data/medal_2018.csv')
     ## dataset_3
-    winner_medals = pd.read_excel('data/winner_medals.csv')
+    winner_medals = pd.read_csv('data/winner_medals.csv')
 
     ##########################
     ####### main page ########
