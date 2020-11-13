@@ -1,11 +1,11 @@
-import altair as alt
 import pandas as pd
 import numpy as np
-import seaborn as sns
-import streamlit as st
-from matplotlib import pyplot as plt
 import requests
 from bs4 import BeautifulSoup
+import sys
+import codecs
+
+sys.stdout = codecs.getwriter('utf8')(sys.stdout)
 
 # Data Processing
 ## dataset_1
@@ -65,7 +65,8 @@ medal_2018.to_csv('data/medal_2018.csv')
 # https://data.world/makeovermonday/2018w7-the-winter-olympics 
 # Winner of Winter Olympics 1924-2014
 winner_medals = pd.read_excel('archive/Winer Olympic Medals.xlsx')
-
+# print(winner_medals.loc[8])
+winner_medals.to_csv('data/winner_medals.csv',encoding='utf-8')
 
 
 
