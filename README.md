@@ -1,4 +1,4 @@
-# Communicative Project - SI 649 Information Visualization
+# Communicative Project - SI 649 Information Visualization [![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/young19-haha/info_vis/main/blog.py)
 Objective: 
 - Based on the provided article, build communicative vis.
 
