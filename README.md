@@ -16,5 +16,4 @@ Ojective:
 - Based on provided meterials, build a visualization dashboard.
 
 ### How to run the code
-#### Option 1
 If you want to run the code locally, you need first to clone the code, then open cmd in Windows/ Terminal in Mac and run streamlit run dahboard.py in the corresponding folder, and open the link presented in the command line (usually it should be http://localhost:8501) in your browser.
